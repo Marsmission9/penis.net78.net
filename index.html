@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title id="title">PENIS</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="Description" content="PENIS!!!">
+    <meta name="Keywords" content="PENIS!!!,HAIR!!!">
+<audio id="bloop">
+    <source src="bloop.mp3">
+        <source src="bloop.wav">
+            <source src="bloop.ogg">
+</audio>
+<script>
+var badWord = ["ANUS!!!", "ARMPIT!!!", "CHEST!!!", "PENIS!!!"];
+var badWordNumber = 0;
+console.log(badWord.length);
+function over(){
+    document.getElementById("bloop").play();
+    badWordNumber = badWordNumber + 1;
+    if (badWordNumber===4){
+        badWordNumber= 0;
+    }
+    document.getElementById("penis").innerHTML="HAIR!!!";
+    document.getElementById("title").innerHTML="HAIR!!!";
+    setTimeout(function(){document.getElementById("penis").style.color="black"},100);
+    setTimeout(function(){document.getElementById("penis").style.color="blue"},200);
+    setTimeout(function(){document.getElementById("penis").style.color="purple"},300);
+    setTimeout(function(){document.getElementById("penis").style.color="#f07"},400);
+    setTimeout(function(){document.getElementById("penis").innerHTML=badWord[badWordNumber]},500);
+    setTimeout(function(){document.getElementById("title").innerHTML=badWord[badWordNumber]},500);
+};
+
+
+</script>
+<style>
+body {
+    background-color:#fa509f;
+}
+p {
+    color:#f07;
+    font-family:sans-serif;
+    font-size:500%;
+    text-align:center;
+    left:33%;
+    top:30%;
+    width:33%;
+    position:absolute
+}    
+</style>
+</head>
+<body>
+<p id="penis" onmouseover="over()">PENIS!!!</p>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46841983-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>	
